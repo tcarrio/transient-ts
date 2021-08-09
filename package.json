@@ -1,0 +1,25 @@
+{
+  "name": "@0xc/transient",
+  "version": "0.0.1",
+  "description": "transient decorator utilizing reflection",
+  "main": "dist/index.js",
+  "author": "Tom Carrio <tom@carrio.dev>",
+  "license": "MIT",
+  "files": ["dist/"],
+  "private": false,
+  "scripts": {
+    "prebuild": "rm -rf ./dist",
+    "build": "tsc",
+    "test": "uvu -r ts-node/register -r esbuild-register tests"
+  },
+  "devDependencies": {
+    "@types/node": "^16.4.13",
+    "esbuild-register": "^2.6.0",
+    "ts-node": "^10.2.0",
+    "typescript": "^4.3.5",
+    "uvu": "^0.5.1"
+  },
+  "dependencies": {
+    "reflect-metadata": "^0.1.13"
+  }
+}
