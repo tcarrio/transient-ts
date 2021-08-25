@@ -12,6 +12,7 @@
   "scripts": {
     "prebuild": "rm -rf ./dist",
     "build": "tsc",
+    "prepare": "yarn run build",
     "test": "uvu -r ts-node/register -r esbuild-register tests"
   },
   "devDependencies": {
